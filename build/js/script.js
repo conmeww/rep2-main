@@ -178,23 +178,24 @@ function cb() {}
 // mobile dropdown
 
 $(function () {
-  $(".nav__icon").on("click", function () {
+  $(".header__burger--2").on("click", function () {
     $(this).toggleClass("active");
-    $(".sidebar").slideToggle();
-    $(".icons-top").toggleClass("icons-top--fixed");
-
-    $(".wrapper").toggleClass("wrapper--mobile-fixed");
-    $(".main").toggleClass("main--mobile-fixed");
+    $(".nav-mobile--2").slideToggle();
+    $(".header__icons--2").toggleClass("icons-top--fixed");
+    $(".sidebar").toggleClass("sidebar__invisible");
+    $(".main").toggleClass("main__invisible");
+    $(".content").toggleClass("content--mobile-fixed");
+    $(".header__wrapper").toggleClass("header--mobile-fixed");
   });
 
   $(window).on("load resize", function () {
     var w = $(window).width();
 
-    var x = 1024;
+    var x = 1366;
     if (w >= x) {
-      $(".sidebar").addClass("show");
+      $(".nav-mobile--2").addClass("show");
     } else {
-      $(".sidebar").removeClass("show");
+      $(".nav-mobile--2").removeClass("show");
     }
   });
 });
@@ -320,3 +321,145 @@ function stickyleftcol(napravlenie, sceollpx) {
     }
   }
 }
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// header main menu
+// $(function () {
+//   $(".header__nav__icon").on("click", function () {
+//     $(this).toggleClass("active");
+//     $(".header__mob-menu").slideToggle();
+//     $(".header__icons-top").toggleClass("icons-top--fixed");
+//     $(".sidebar").toggleClass("sidebar__invisible");
+//     $(".main").toggleClass("main__invisible");
+//     $(".content").toggleClass("content--mobile-fixed");
+//     $(".header__wrapper").toggleClass("header--mobile-fixed");
+//   });
+
+//   $(window).on("load resize", function () {
+//     var w = $(window).width();
+
+//     var x = 1366;
+//     if (w >= x) {
+//       $(".header__mob-menu").addClass("show");
+//     } else {
+//       $(".header__mob-menu").removeClass("show");
+//     }
+//   });
+// });
+$(function () {
+  $(".header__burger--1").on("click", function () {
+    $(this).toggleClass("active");
+    $(".nav-mobile--1").slideToggle();
+    $(".header__icons--1").toggleClass("icons-top--fixed");
+    $(".sidebar").toggleClass("sidebar__invisible");
+    $(".main").toggleClass("main__invisible");
+    $(".content").toggleClass("content--mobile-fixed");
+    $(".header__wrapper").toggleClass("header--mobile-fixed");
+  });
+
+  $(window).on("load resize", function () {
+    var w = $(window).width();
+
+    var x = 1024;
+    if (w >= x) {
+      $(".nav-mobile--1").addClass("show");
+    } else {
+      $(".nav-mobile--1").removeClass("show");
+    }
+  });
+});
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// SHOW HEADER ON SCROLL DOWN
+// $(window).scroll(function () {
+//   if ($(this).scrollTop() > 0) {
+//     $(".header--1").removeClass("header--basic");
+//   }
+// });
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
+var didScroll;
+var lastScrollTop = 0;
+var delta = 3;
+var navbarHeight = $(".header--1").outerHeight();
+
+$(window).scroll(function (event) {
+  didScroll = true;
+});
+
+setInterval(function () {
+  if (didScroll) {
+    hasScrolled();
+    didScroll = false;
+  }
+}, 250);
+
+function hasScrolled() {
+  var st = $(this).scrollTop();
+
+  if (Math.abs(lastScrollTop - st) <= delta) return;
+
+  if (st > lastScrollTop && st > navbarHeight) {
+    // Scroll Down
+    $(".header--1").removeClass("nav-down").addClass("nav-up");
+  } else {
+    // Scroll Up
+    if (st + $(window).height() < $(document).height()) {
+      $(".header--1").removeClass("nav-up").addClass("nav-down");
+    }
+  }
+
+  lastScrollTop = st;
+}
+
+$(".price_range").ionRangeSlider({
+  type: "double",
+  min: 0,
+  max: 154600,
+  skin: "round",
+  hide_from_to: true,
+  hide_min_max: true,
+  onChange: function (data) {
+    $("#range_price_from").val(data.from);
+    $("#range_price_to").val(data.to);
+  },
+});
+
+$(".area_range").ionRangeSlider({
+  type: "double",
+  min: 0,
+  max: 2000,
+  skin: "round",
+  hide_from_to: true,
+  hide_min_max: true,
+  onChange: function (data) {
+    $("#range_area_from").val(data.from);
+    $("#range_area_to").val(data.to);
+  },
+});
+
+$(".power_range").ionRangeSlider({
+  type: "double",
+  min: 0,
+  max: 2000,
+  skin: "round",
+  hide_from_to: true,
+  hide_min_max: true,
+  onChange: function (data) {
+    $("#range_power_from").val(data.from);
+    $("#range_power_to").val(data.to);
+  },
+});
+
+$(".noize_range").ionRangeSlider({
+  type: "double",
+  min: 0,
+  max: 2000,
+  skin: "round",
+  hide_from_to: true,
+  hide_min_max: true,
+  onChange: function (data) {
+    $("#range_noize_from").val(data.from);
+    $("#range_noize_to").val(data.to);
+  },
+});

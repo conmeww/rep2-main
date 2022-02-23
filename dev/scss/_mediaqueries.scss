@@ -4,6 +4,10 @@
     width: 100%;
     margin: 0 auto;
   }
+  .header__icons--1 {
+    max-width: 1920px;
+    right: auto;
+  }
 }
 @media only screen and (max-width: 1900px) {
   .sidebar {
@@ -243,7 +247,7 @@
   }
   /*************** sidebar ***************/
   li.nav__secondary ul li::before {
-    content: url(/img/hr-line-sm.svg);
+    content: url(../img/hr-line-sm.svg);
     left: -35px;
   }
   li.nav__secondary ul {
@@ -253,7 +257,8 @@
     margin-bottom: 35px;
   }
 
-  .sidebar__link {
+  .sidebar__link,
+  .header__nav-link {
     font-size: 18px;
   }
   .sidebar__link-sm {
@@ -619,7 +624,6 @@
   }
 
   .footer__col--2 {
-    width: 450px;
     margin-left: 50px;
   }
 

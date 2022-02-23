@@ -205,11 +205,12 @@ h4 {
 }
 
 /// navigation desktop font styles
-.sidebar__link {
+.sidebar__link,
+.header__nav-link {
   display: inline-block;
   color: $color-black;
   font-size: 20px;
-  font-family: "Stem Regular";
+  font-family: "Stem Medium";
   font-weight: 100;
   text-transform: uppercase;
 }

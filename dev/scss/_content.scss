@@ -1,3 +1,6 @@
+.fixed {
+  padding-top: 0;
+}
 /*************** slider timeline 1 ***************/
 
 .btn--news--show-all {
@@ -57,9 +60,9 @@ svg.btn--news--show-all__svg path {
   top: 70px;
   margin-bottom: 1em;
 }
-.show {
-  display: block !important;
-}
+// .show {
+//   display: block !important;
+// }
 .hide {
   display: none !important;
 }
@@ -171,8 +174,6 @@ svg.btn--news--show-all__svg path {
 }
 
 .swiper-button-prev {
-  //background-image: url(../img/arr-left.svg);
-  //background-repeat: no-repeat;
   left: 16px;
 
   pointer-events: all;
@@ -191,9 +192,6 @@ svg.btn--news--show-all__svg path {
 
 .swiper-button-next,
 .swiper-button-prev {
-  //background-image: url(../img/arr-right.svg);
-  // background-repeat: no-repeat;
-
   pointer-events: all;
   top: 6px;
   background: #fff;
@@ -239,6 +237,7 @@ a.product-type {
   h3 {
     text-transform: uppercase;
     padding-left: 50px;
+    color: $color-black;
   }
 }
 
@@ -671,8 +670,8 @@ button.btn--solid {
   padding-left: 40px;
 }
 
-.advantage img {
-  padding-right: 30px;
+.advantage__icon {
+  margin-right: 30px;
 }
 
 .advantage:not(:last-of-type) {
@@ -1012,11 +1011,6 @@ img.screen {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.contacts img.map {
-  max-width: 718px;
-  width: 100%;
 }
 
 @media only screen and (max-width: 1700px) {
