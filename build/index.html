@@ -8,6 +8,19 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
     <meta name="format-detection" content="telephone=no" />
+    <!--range slider-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.0.0/rangeslider.min.css"
+      integrity="sha512-0vp5NeGSXVyVhWa/BuqCPMno6cznsCS/e1qIYhfSR1yPj5bqiyVjpDsSN69DYrZa2zXjpD1dd15/MekBvhspig=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"
+    />
     <!--swiper slider-->
     <link
       rel="stylesheet"
@@ -992,344 +1005,6 @@
               </li>
             </ul>
           </div>
-
-          <!--- accordeon mobile menu( not show on desktop )--->
-          <!-- <div class="accordion nav-mobile" id="accordionPanelsStayOpenExample">
-            <a href="#" class="nav-mobile__link">Каталог</a>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                <button
-                  class="accordion-button nav-mobile__link"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseOne"
-                  aria-expanded="true"
-                  aria-controls="panelsStayOpen-collapseOne"
-                >
-                  кондиционеры
-                </button>
-              </h2>
-              <div
-                id="panelsStayOpen-collapseOne"
-                class="accordion-collapse collapse show"
-                aria-labelledby="panelsStayOpen-headingOne"
-              >
-                <div class="accordion-body">
-                  <ul class="accordion__ul">
-                    <li>
-                      <a href="#" class="accordion-body__link"
-                        >Инверторный кондиционер</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="accordion-body__link"
-                        >Настенный кондиционер</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="accordion-body__link"
-                        >Канальный кондиционер</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="accordion-body__link"
-                        >Мульти сплит-системы</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="accordion-body__link">Сплит системы</a>
-                    </li>
-                    <li>
-                      <a href="#" class="detailed-search p-sm"
-                        >Подбор по параметрам</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                <button
-                  class="accordion-button nav-mobile__link"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseTwo"
-                  aria-expanded="true"
-                  aria-controls="panelsStayOpen-collapseTwo"
-                >
-                  Системы вентиляции
-                </button>
-              </h2>
-              <div
-                id="panelsStayOpen-collapseTwo"
-                class="accordion-collapse collapse show"
-                aria-labelledby="panelsStayOpen-headingTwo"
-              >
-                <div class="accordion-body">
-                  <ul class="accordion__ul">
-                    <li>
-                      <a href="#" class="accordion-body__link"
-                        >Приточно вытяжная вентиляция</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="accordion-body__link"
-                        >Приточная вентиляция</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="accordion-body__link"
-                        >Вытяжная вентиляция</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="accordion-body__link"
-                        >Вентиляция для квартиры</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="accordion-body__link"
-                        >Вентиляция для дома</a
-                      >
-                    </li>
-
-                    <li>
-                      <a href="#" class="detailed-search p-sm"
-                        >Подбор по параметрам</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                <button
-                  class="accordion-button collapsed nav-mobile__link"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseThree"
-                  aria-expanded="false"
-                  aria-controls="panelsStayOpen-collapseThree"
-                >
-                  Услуги
-                </button>
-              </h2>
-              <div
-                id="panelsStayOpen-collapseThree"
-                class="accordion-collapse collapse"
-                aria-labelledby="panelsStayOpen-headingThree"
-              >
-                <div class="accordion-body">
-                  <ul class="accordion__ul">
-                    <li>
-                      <a href="#" class="accordion-body__link"
-                        >Заправка кондиционера</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="accordion-body__link"
-                        >Демонтаж кондиционера</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="accordion-body__link"
-                        >Монтаж вентиляции</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="accordion-body__link"
-                        >Установка низкотемпературного комплекта</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="accordion-body__link"
-                        >Сервисное обслуживание кондиционера</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="accordion-body__link"
-                        >Установка кондиционера</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="accordion-body__link"
-                        >Ремонт кондиционера</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-                <button
-                  class="accordion-button collapsed nav-mobile__link"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseFour"
-                  aria-expanded="false"
-                  aria-controls="panelsStayOpen-collapseThree"
-                >
-                  О компании
-                </button>
-              </h2>
-              <div
-                id="panelsStayOpen-collapseFour"
-                class="accordion-collapse collapse"
-                aria-labelledby="panelsStayOpen-headingFour"
-              >
-                <div class="accordion-body">
-                  <ul class="accordion__ul">
-                    <li>
-                      <a href="#" class="accordion-body__link">Наша команда</a>
-                    </li>
-                    <li>
-                      <a href="#" class="accordion-body__link"
-                        >Новости и статьи</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="accordion-body__link"
-                        >Сотрудничество</a
-                      >
-                    </li>
-
-                    <li>
-                      <a href="#" class="accordion-body__link"
-                        >Выполненные работы</a
-                      >
-                    </li>
-                    <li><a href="#" class="accordion-body__link">Отзывы</a></li>
-                    <li>
-                      <a href="#" class="accordion-body__link">Сертификаты</a>
-                    </li>
-                    <li>
-                      <a href="#" class="accordion-body__link">Вакансии</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="panelsStayOpen-headingFive">
-                <button
-                  class="accordion-button collapsed nav-mobile__link"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseFive"
-                  aria-expanded="false"
-                  aria-controls="panelsStayOpen-collapseThree"
-                >
-                  Клиентам
-                </button>
-              </h2>
-              <div
-                id="panelsStayOpen-collapseFive"
-                class="accordion-collapse collapse"
-                aria-labelledby="panelsStayOpen-headingFive"
-              >
-                <div class="accordion-body">
-                  <ul class="accordion__ul">
-                    <li>
-                      <a href="#" class="accordion-body__link"
-                        >Доставка и оплата</a
-                      >
-                    </li>
-                    <li><a href="#" class="accordion-body__link">Акции</a></li>
-                    <li>
-                      <a href="#" class="accordion-body__link">Гарантия</a>
-                    </li>
-                    <li>
-                      <a href="#" class="accordion-body__link"
-                        >Вопрос — ответ</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <a href="#" class="nav-mobile__link"> Контакты</a>
-            <ul class="sidebar__socials nav-mobile__socials">
-              <li>
-                <a href="https://vk.com/" target="_blank"
-                  ><svg
-                    width="22"
-                    height="14"
-                    viewBox="0 0 22 14"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M6.45751 7.96692C4.96946 6.51936 4.04389 4.13461 3.78661 1.08577L3.69501 0H1.8915C0.899471 0 0.0614166 0.0264533 0.0290419 0.0589606C-0.0912443 0.179251 0.18565 2.95158 0.428329 4.05565C1.68199 9.76035 5.35559 13.0637 10.8027 13.3843L12.1516 13.4637V11.0689V8.67419L12.6451 8.75868C13.3773 8.88384 14.7115 9.53083 15.4042 10.0966C16.0574 10.6299 17.1686 12.2143 17.4166 12.9659L17.5678 13.4241H19.4824H21.3968L21.3114 12.9963C21.189 12.3836 20.5507 11.0678 19.9434 10.1762C19.2692 9.1868 18.105 8.04286 16.999 7.28322L16.1216 6.68045L16.9332 6.03201C18.4514 4.81911 19.749 3.01699 20.3021 1.3532C20.5216 0.693153 20.6542 0.351291 20.5372 0.178685C20.4009 -0.0223337 19.926 0.00621363 18.8556 0.0290848L17.1367 0.0658045L16.7742 0.925471C16.296 2.05981 15.4723 3.25547 14.6917 3.94892C14.0958 4.47811 12.6765 5.26395 12.3161 5.26421C12.1901 5.26434 12.1516 4.65026 12.1516 2.63217V0H10.375H8.59832V4.61512V9.23037L8.30221 9.14205C7.79119 8.98952 6.97274 8.46822 6.45751 7.96692Z"
-                      fill="#0278E6"
-                    /></svg
-                ></a>
-              </li>
-              <li></li>
-              <li>
-                <a href="https://www.instagram.com/" target="_blank">
-                  <svg
-                    width="19"
-                    height="19"
-                    viewBox="0 0 19 19"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M5.17819 2.04795L5.19707 2.17691C5.19693 2.17693 5.19712 2.17691 5.19768 2.17687C5.2 2.17668 5.20874 2.17599 5.22749 2.17515C5.24819 2.17423 5.27641 2.1733 5.31206 2.17237C5.38326 2.17053 5.48208 2.16878 5.60565 2.16713C5.85268 2.16384 6.19705 2.16101 6.61377 2.15878C7.44713 2.15431 8.56887 2.15223 9.77779 2.15362L14.157 2.15867L14.4639 2.24332C15.1468 2.43172 15.6678 2.72871 16.1267 3.18777L16.2171 3.09743L16.1267 3.18777C16.5854 3.64659 16.882 4.16705 17.0712 4.85121L17.1947 4.81707L17.0712 4.85122L17.156 5.15808V9.65695V14.1558L17.0712 14.4627L17.1968 14.4974L17.0712 14.4627C16.882 15.1469 16.5854 15.6673 16.1267 16.1261C15.6681 16.585 15.1478 16.8817 14.4638 17.0708L14.4961 17.1876L14.4638 17.0708L14.1571 17.1557H9.65956H5.16206L4.85531 17.0708L4.82183 17.1919L4.8553 17.0708C4.17136 16.8817 3.65107 16.585 3.19239 16.1261C2.7337 15.6673 2.43708 15.1469 2.24795 14.4627L2.12233 14.4974L2.24795 14.4627L2.1631 14.1558V9.65695V5.15808L2.24795 4.85122L2.24795 4.85121C2.43686 4.16786 2.73375 3.64651 3.19053 3.1896C3.73251 2.64745 4.44777 2.2867 5.19708 2.17691L5.17819 2.04795ZM5.17819 2.04795C5.2898 2.03161 7.35969 2.02052 9.77794 2.02329L14.1748 2.02837M5.17819 2.04795C4.4008 2.16187 3.65993 2.53571 3.09836 3.09745C2.62428 3.57168 2.3167 4.11339 2.12233 4.81649L14.1748 2.02837M14.1748 2.02837L14.4986 2.11768L14.1748 2.02837ZM14.9394 3.17926L14.9394 3.17927C15.4956 3.34613 15.9176 3.83237 16.0117 4.41109C16.1815 5.4546 15.1841 6.37773 14.1628 6.11599C13.5669 5.96327 13.1823 5.57681 13.029 4.97819M14.9394 3.17926L14.3261 3.12398C13.4307 3.24744 12.8096 4.12131 13.029 4.97819M14.9394 3.17926C14.8539 3.15363 14.7383 3.1352 14.6297 3.12527C14.522 3.11542 14.4078 3.1127 14.3261 3.12397L14.9394 3.17926ZM13.029 4.97819L13.1553 4.94586L13.0291 4.9782C13.0291 4.97819 13.029 4.97819 13.029 4.97819ZM14.6881 4.79787L14.6881 4.79785C14.7871 4.69452 14.7613 4.50983 14.6542 4.44304C14.5862 4.40064 14.531 4.38853 14.4866 4.39221C14.4427 4.39583 14.3941 4.41601 14.3406 4.46635L14.6881 4.79787ZM14.6881 4.79787C14.6427 4.84533 14.5967 4.86921 14.5537 4.87754M14.6881 4.79787L14.5537 4.87754M14.5537 4.87754C14.511 4.88583 14.4616 4.8806 14.4056 4.85404L14.5537 4.87754ZM0.907941 5.15312L0.90794 5.15312C0.900843 5.21681 0.895391 5.39996 0.890767 5.66137C0.886072 5.92679 0.882166 6.28153 0.879042 6.69558C0.872795 7.52377 0.869672 8.59043 0.869672 9.65695C0.869672 10.7235 0.872795 11.7901 0.879042 12.6183C0.882166 13.0324 0.886072 13.3871 0.890767 13.6525C0.895391 13.9139 0.900843 14.0971 0.90794 14.1608L1.03746 14.1463L0.907941 14.1608C1.15719 16.3965 2.92201 18.1618 5.15708 18.4112C5.22075 18.4183 5.40385 18.4237 5.66518 18.4284C5.93052 18.433 6.28516 18.437 6.69908 18.4401C7.52702 18.4463 8.59336 18.4495 9.65956 18.4495C10.7258 18.4495 11.7921 18.4463 12.62 18.4401C13.034 18.437 13.3886 18.433 13.6539 18.4284C13.9153 18.4237 14.0984 18.4183 14.162 18.4112C16.3971 18.1618 18.1619 16.3965 18.4112 14.1608L18.2817 14.1463L18.4112 14.1608C18.4183 14.0971 18.4237 13.9139 18.4284 13.6525C18.4331 13.3871 18.437 13.0324 18.4401 12.6183C18.4463 11.7901 18.4495 10.7235 18.4495 9.65695C18.4495 8.59043 18.4463 7.52377 18.4401 6.69558C18.437 6.28153 18.4331 5.92679 18.4284 5.66137C18.4237 5.39996 18.4183 5.21681 18.4112 5.15312L18.2847 5.16722L18.4112 5.15312C18.1619 2.91745 16.3971 1.15206 14.162 0.902729L14.1476 1.03225L14.162 0.902728C14.1044 0.896297 13.9237 0.89151 13.6635 0.887465C13.3988 0.883352 13.0423 0.879962 12.625 0.877286C11.7902 0.871931 10.7106 0.869421 9.63142 0.869692C8.55225 0.869963 7.47323 0.873014 6.63959 0.878787C6.22281 0.881674 5.86708 0.885242 5.60323 0.889489C5.34401 0.893661 5.1641 0.898534 5.10736 0.905041C4.52206 0.972165 3.84089 1.19768 3.31806 1.49692C1.96951 2.26871 1.07896 3.61916 0.907941 5.15312ZM12.189 7.12664L12.2812 7.0345L12.189 7.12665C13.5938 8.53181 13.5938 10.7821 12.189 12.1873C10.7843 13.5924 8.5348 13.5924 7.13008 12.1873C5.72534 10.7821 5.72534 8.53181 7.13008 7.12665L7.03791 7.0345L7.13008 7.12664C7.94286 6.31359 9.05957 5.94332 10.1812 6.11342C10.9653 6.23235 11.6309 6.56832 12.189 7.12664ZM8.99014 4.84339C7.06618 5.10569 5.4453 6.55329 4.95426 8.44582C4.52304 10.1077 5.00601 11.8576 6.23274 13.0847C8.14502 14.9976 11.1741 14.9976 13.0864 13.0847C14.9985 11.172 14.9986 8.14045 13.0863 6.22948C11.9894 5.13332 10.5179 4.63509 8.99014 4.84339Z"
-                      fill="#0278E6"
-                      stroke="#0278E6"
-                      stroke-width="0.260656"
-                    /></svg
-                ></a>
-              </li>
-              <li></li>
-
-              <li>
-                <a href="https://www.facebook.com" target="_blank">
-                  <svg
-                    width="10"
-                    height="19"
-                    viewBox="0 0 10 19"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M6.13481 0.0332149C5.12537 0.198394 4.41633 0.556317 3.83464 1.19428C3.34491 1.73142 3.03933 2.36161 2.86639 3.19094C2.80108 3.50419 2.79274 3.69351 2.77924 5.16907L2.76431 6.8008H1.38216H0V8.45944V10.1181L1.37595 10.1276L2.7519 10.1372L2.76081 14.3943L2.76971 18.6514H4.4172H6.0647V14.3852V10.119H7.43189C8.18384 10.119 8.79963 10.1148 8.80033 10.1098C8.89211 9.44577 9.20428 6.84715 9.19454 6.82815C9.18686 6.81309 8.47845 6.8008 7.62031 6.8008H6.06011L6.07188 5.44254C6.08345 4.11411 6.08552 4.07955 6.16657 3.86846C6.33077 3.44085 6.67629 3.1882 7.19214 3.11856C7.33366 3.09945 7.87159 3.0833 8.38755 3.08268L9.32568 3.08155L9.31653 1.59567L9.30738 0.109788L8.85166 0.0667247C8.10444 -0.00390468 6.48379 -0.0238866 6.13481 0.0332149Z"
-                      fill="#0278E6"
-                    /></svg
-                ></a>
-              </li>
-              <li></li>
-
-              <li>
-                <a href="https://www.youtube.com/" target="_blank"
-                  ><svg
-                    width="20"
-                    height="14"
-                    viewBox="0 0 20 14"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M0.0723502 2.50813C0.323236 1.30579 1.31416 0.31831 2.52428 0.0646011C2.84115 -0.00179512 3.19339 -0.00471657 9.93469 0.00298539C16.6552 0.0106873 17.0241 0.0145954 17.2426 0.0801569C18.4286 0.435851 19.2188 1.22358 19.5504 2.38058C19.617 2.61304 19.621 2.85753 19.621 6.6678C19.621 10.4615 19.6167 10.7267 19.5503 11.0069C19.4108 11.5955 19.1457 12.0866 18.7416 12.5055C18.3295 12.9325 17.9077 13.1886 17.3119 13.3734L16.9741 13.4782H9.81961C3.01316 13.4782 2.49897 13.4987 2.08189 13.3075C2.00474 13.2721 1.93091 13.2295 1.82119 13.1781C0.929697 12.7609 0.271409 11.9332 0.0723502 10.9792C0.00421979 10.6528 0 10.4061 0 6.74368C0 3.0813 0.00421979 2.83457 0.0723502 2.50813ZM18.4329 2.7014C18.2586 1.95818 17.6569 1.36039 16.9073 1.1856C16.5587 1.10429 3.05379 1.106 2.71432 1.18738C1.98986 1.36107 1.37983 1.9707 1.20763 2.69313C1.123 3.04811 1.123 10.4393 1.20763 10.7942C1.38198 11.5258 1.99224 12.1293 2.73189 12.3018C2.93885 12.35 3.91355 12.3578 9.78378 12.3583C14.4723 12.3587 16.6665 12.3462 16.8232 12.3182C17.3687 12.2205 17.9777 11.7728 18.2256 11.2872C18.2695 11.2013 18.3053 11.1391 18.3347 11.074C18.478 10.7568 18.4677 10.3704 18.4796 6.83265C18.4912 3.42345 18.4855 2.92605 18.4329 2.7014ZM7.47429 10.6073C7.45584 10.6144 7.44118 8.90232 7.44118 6.74368C7.44118 4.61172 7.45583 2.87309 7.47375 2.88007C7.5418 2.90647 13.3859 6.72562 13.3859 6.74368C13.3859 6.76197 7.54165 10.5816 7.47429 10.6073Z"
-                      fill="#0278E6"
-                    /></svg
-                ></a>
-              </li>
-            </ul>
-          </div> -->
         </div>
         <!------------------------------MAIN CONTENT------------------------------>
 
@@ -3553,7 +3228,7 @@
               </div>
 
               <div class="footer__col footer__col--3">
-                <div class="yandex-service">
+                <a href="#" class="yandex-service">
                   <img
                     src="img/icons/yandex.png"
                     class="yandex-service__ic"
@@ -3566,8 +3241,8 @@
                     <img src="img/icons/star-half.svg" alt="star" />
                     <img src="img/icons/star-null.svg" alt="no star" />
                   </div>
-                </div>
-                <div class="google-service">
+                </a>
+                <a href="#" class="google-service">
                   <img
                     src="img/icons/google_my_business_logo 1.png"
                     class="google-service__ic"
@@ -3580,7 +3255,7 @@
                     <img src="img/icons/star-full.svg" alt="star" />
                     <img src="img/icons/star-half.svg" alt="star half" />
                   </div>
-                </div>
+                </a>
               </div>
 
               <a href="http://awa.agency" target="_blank" class="logo-awa">
@@ -3628,14 +3303,20 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.0.0/rangeslider.min.js"
+      integrity="sha512-Lazz7w1HKIe2f7fhEqp6iNrgwCxQ2DgjKxHDzEs4Wxjzf9V0GqCydiO7c37dNmdXuplGLVcq4NnzmwvMdfbsWA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
     <script src="js/script.js"></script>
     <script
       src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=ea3b87b4-72fb-487e-9070-ac17499e5cb6"
       type="text/javascript"
     ></script>
-    <script>
-      //MAP
 
+    <script>
       ymaps.ready(function () {
         var myMap = new ymaps.Map(
           "map",

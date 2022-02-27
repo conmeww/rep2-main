@@ -8,3 +8,16 @@ CHANGE HERO IMGS
 
 MARGINS SECTIONS
 add scroll color
+
+заменить stayopen example accord
+
+свернуть везде меню
+проверить отступы в сайдбаре меню
+слишком рано карточки на 100% моб
+padding 25px ?? 90% container main
+z-index иконки главная
+
+
+проверить свг типы продуктов
+
+start title

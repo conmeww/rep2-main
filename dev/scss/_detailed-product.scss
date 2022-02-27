@@ -1,0 +1,277 @@
+/********************************************* BASIC STYLES *********************************************/
+.main--full-width {
+  display: flex;
+  max-width: 1920px !important;
+  width: 100% !important;
+}
+.content--full-width {
+  width: 100%;
+  display: block;
+}
+.main-col--1 {
+  height: 100%;
+  width: 50%;
+}
+.main-col--2 {
+  height: 100%;
+  width: 50%;
+}
+
+.review__wrapper,
+.features__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/// breadcrumbs
+.breadcrumbs__wrapper {
+  margin-bottom: 30px;
+  background: #fff;
+  z-index: 10;
+}
+.breadcrumbs {
+  width: 92%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+}
+.breadcrumbs__link {
+  font-size: 14px;
+  color: #d7d5d5;
+}
+/// GALLERY THUMBNAILS
+.product__gallery {
+  margin-left: 20px;
+  position: relative;
+}
+.product__brand {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+.img-thumbnail {
+  border: none;
+}
+.thumbnail--active {
+  border: 1px solid #e3e4e6;
+}
+.product-image {
+  position: relative;
+  margin: 0 auto;
+  height: 500px;
+  width: 500px;
+  overflow: hidden;
+  .image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s ease-out;
+  }
+}
+
+.product-thumbnails {
+  margin-top: 30px;
+  img {
+    height: 180px;
+    padding: 16px 40px;
+    width: auto;
+    border-radius: 0;
+    cursor: pointer;
+    position: relative;
+  }
+  img:hover {
+    opacity: 0.6;
+  }
+}
+/// FEATURES
+.features--table {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+.features__col {
+  background: #faf8f7;
+  font-size: 18px;
+  line-height: normal;
+  padding: 16px;
+}
+.features__col--1 {
+  grid-column: 1/3;
+}
+/// FORM REVIEW
+.review {
+  background: #faf8f7;
+  padding: 60px 100px;
+}
+.form--review {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.input__wrapper,
+.textarea__wrapper,
+.review__title,
+.leave-rate {
+  grid-column: 1/4;
+}
+.input--review {
+  color: $color-black;
+  width: 100%;
+  &::placeholder {
+    color: $color-black;
+  }
+}
+.btn--review {
+  grid-column: 1/2;
+  width: 187px;
+  height: 54px;
+  margin-right: 40px;
+}
+.checkbox__agreement--reviews {
+  grid-column: 2/4;
+  top: 12px;
+}
+.rating {
+  grid-column: 1/3;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+.input__wrapper {
+  position: relative;
+  &::before {
+    content: "*";
+    display: block;
+    position: absolute;
+    right: 13px;
+    top: 10px;
+  }
+}
+
+.textarea__wrapper {
+  position: relative;
+  &::before {
+    content: "*";
+    display: block;
+    position: absolute;
+    right: 13px;
+    top: 10px;
+  }
+}
+
+.textarea--review {
+  color: $color-black;
+  min-height: 133px;
+  height: 133px;
+  outline: 0;
+  background-color: #fff;
+  border: none;
+  display: inline;
+  height: 54px;
+  font-size: 18px;
+  font-family: "Stem Light";
+  padding: 16px 30px;
+  margin-bottom: 40px;
+  width: 100%;
+  &::before {
+    content: "*";
+    display: block;
+  }
+  &::placeholder {
+    color: $color-black;
+  }
+}
+
+.review__title {
+  font-size: 18px;
+  font-family: "Stem Medium";
+  font-weight: 100;
+  padding-bottom: 30px;
+}
+.leave-rate {
+  font-size: 18px;
+  margin-bottom: 13px;
+}
+.input--review {
+  width: 100%;
+  height: 54px;
+  margin-bottom: 25px;
+}
+///stars
+fieldset,
+label {
+  margin: 0;
+  padding: 0;
+}
+
+/****** Style Star Rating Widget *****/
+
+.rating {
+  border: none;
+}
+
+.rating > input {
+  display: none;
+}
+.rating > label:before {
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before {
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label {
+  color: #ddd;
+  float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label {
+  color: #ffd700;
+} /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label {
+  color: #ffed85;
+}
+///////////////////////////////////////////gallery slider
+.product-cards-slider__wrapper {
+  position: relative;
+}
+.products-slider__navigation {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.products-slider__prev svg,
+.products-slider__next svg {
+  box-shadow: 0px 3px 6px rgba(29, 23, 0, 0.1);
+  height: 34px;
+  width: 34px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  position: absolute;
+}
+.products-slider__prev {
+  right: 0;
+}

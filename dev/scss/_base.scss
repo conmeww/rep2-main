@@ -214,7 +214,9 @@ button {
   cursor: pointer;
   transition: $transition;
 }
-
+.accordion-button:active {
+  transform: none !important;
+}
 button.btn--call {
   width: 183px;
   height: 40px;
@@ -304,7 +306,9 @@ a.product-type {
     }
   }
 }
-
+.btn {
+  padding: 0;
+}
 button.product__cart:hover {
   background: $color-blue;
   color: #fff;
@@ -758,4 +762,11 @@ button {
   .ymaps-2-1-79-map {
     width: 100%;
   }
+}
+/// breadcrumbs separator
+.breadcrumbs__separator {
+  position: relative;
+  top: -2px;
+  padding: 0 5px;
+  color: #d7d5d5;
 }

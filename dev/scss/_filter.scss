@@ -1,6 +1,72 @@
 /********************************************* SIDEBAR FILTER *********************************************/
+
+.btn--close-filter {
+  background: #fff;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  filter: drop-shadow(0px 3px 6px rgba(29, 23, 0, 0.1));
+  float: right;
+  bottom: 45px;
+  position: relative;
+  display: none;
+}
+
+.btn--do-filter {
+  display: block;
+  background: $color-blue;
+  border-radius: 27px;
+  width: 124px;
+  height: 36px;
+  color: #fff;
+  margin: 0 auto;
+  font-size: 14px;
+  display: none;
+  &:active,
+  &:focus {
+    background: $color-blue-dark;
+    color: #fff;
+  }
+}
+.filter--open {
+  transform: translateX(0) !important;
+}
+// .filter--open-mob {
+//   transform: translateX(-20%) !important;
+// }
+@media only screen and (max-width: 1024px) {
+  /// FILTER
+  .sidebar__filter {
+    background: #faf8f7;
+    display: block;
+    transform: translateX(-100%);
+    transition: 0.5s ease-in-out;
+    z-index: 1000;
+    top: 0;
+    padding-top: 80px;
+  }
+
+  .btn--do-filter {
+    display: block;
+  }
+  .btn--close-filter {
+    display: block;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
 .sidebar__filter {
-  height: 1300px;
+  height: 1400px;
   padding-top: 20px;
   padding-right: 80px;
 }
@@ -157,7 +223,7 @@ input.search--filter:focus:-ms-placeholder {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 250px;
+  height: 290px;
   overflow-y: scroll;
   width: 100%;
   margin-top: 15px;
@@ -271,7 +337,7 @@ label.switch__label {
 label.switch__label:after {
   content: "";
   position: absolute;
-  top: -6px;
+  top: -5px;
   left: 0px;
   width: 18px;
   height: 18px;
@@ -288,4 +354,77 @@ input.switch:checked + label.switch__label:after {
   left: calc(100%);
   transform: translateX(-100%);
   background: $color-blue;
+}
+/// MEDIA QUERIES
+@media only screen and (max-width: 1800px) {
+  .range-slider-input {
+    width: 150px;
+  }
+  .hr-divider--sm {
+    width: 18px;
+  }
+}
+
+@media only screen and (max-width: 1700px) {
+  .range-slider-input {
+    width: 130px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .sidebar__filter {
+    height: 1300px;
+  }
+  .filter__title {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .range-slider-input {
+    font-size: 14px;
+    height: 30px;
+    width: 105px;
+  }
+  .radio__search a img {
+    top: 7px;
+  }
+  .hr-divider--sm {
+    top: 15px;
+  }
+  .radio__container {
+    font-size: 14px;
+  }
+  .radio__options {
+    height: 270px;
+  }
+  .range-slider-input--1 i,
+  .range-slider-input--2 i {
+    top: 4px;
+    right: 17px;
+    font-size: 14px;
+  }
+  input.search--filter {
+    height: 30px;
+  }
+
+  .checkmark--lg {
+    height: 17px;
+    width: 17px;
+    top: 4px;
+  }
+
+  .radio__container .checkmark--lg::after {
+    left: 6px;
+    top: 0px;
+    width: 6px;
+    height: 13px;
+    border: solid #1d1700;
+    border-top-width: medium;
+    border-right-width: medium;
+    border-bottom-width: medium;
+    border-left-width: medium;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
 }

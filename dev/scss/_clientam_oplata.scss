@@ -1,0 +1,106 @@
+.breadcumbs--header {
+  margin-top: 60px;
+  margin-left: 0;
+}
+
+.shipment {
+  display: flex;
+
+  margin-bottom: 300px;
+  justify-content: space-between;
+}
+.shipment-col {
+  width: 47%;
+  background: #faf8f7;
+  padding: 40px 20px;
+}
+.delivery__head,
+.payment__head {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-start;
+  width: 80%;
+
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+.delivery__title,
+.payment__title {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-left: 80px;
+}
+.delivery__subtitle,
+.payment__subtitle {
+  padding-bottom: 20px;
+  font-family: "Stem Regular";
+  font-weight: 900;
+}
+.delivery__table {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin-bottom: 10px;
+}
+.delivery__col--1 {
+  grid-column: 1/3;
+}
+.delivery__col--1,
+.delivery__col--2 {
+  background: #fff;
+  padding: 16px;
+  font-size: 18px;
+}
+.delivery__info-card {
+  background: #fff;
+  padding: 20px 10px;
+}
+p.shipment__txt {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.delivery__subtitle--marked {
+  display: inline-block;
+}
+span.info-mark {
+  color: #a8e18d;
+  position: relative;
+  display: inline-block;
+  height: 34px;
+  width: 34px;
+  top: -5px;
+  margin-right: 15px;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #faf8f7;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+  }
+  &::after {
+    content: "i";
+    display: block;
+    position: absolute;
+    color: #a8e18d;
+    border-radius: 50%;
+    left: 16px;
+    top: 16px;
+    left: 15px;
+    top: 4px;
+    font-weight: 900;
+  }
+}
+/********************************************* QA PAGE  *********************************************/
+.qa__accordion-item {
+  background: #faf8f7;
+}
+.btn--qa {
+  font-size: 18px;
+  font-family: "Stem Regular";
+  font-weight: 900;
+  background: #faf8f7;
+}
