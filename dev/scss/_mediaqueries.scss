@@ -23,7 +23,8 @@
     width: 70%;
   }
 
-  h2.main {
+  h2.main,
+  .h2--main {
     width: 100%;
   }
 
@@ -253,13 +254,15 @@
     font-size: 20px;
   }
 
-  h2.main {
+  h2.main,
+  .h2--main {
     font-size: 20px;
     padding-left: 43px;
     padding-bottom: 30px;
   }
 
-  h2.main::before {
+  h2.main::before,
+  .h2--main::before {
     content: "";
     position: absolute;
     display: inline-block;

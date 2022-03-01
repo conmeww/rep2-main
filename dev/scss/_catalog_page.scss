@@ -1,8 +1,8 @@
 /********************************************* SORT BY SELECTOR *********************************************/
 .sort-by__label {
   font-size: 18px;
-  font-family: "Stem Regular";
-  font-weight: 900;
+  font-family: "Stem Medium";
+  font-weight: 500;
   padding-right: 25px;
 }
 .sort-by__wrapper {
@@ -119,13 +119,13 @@ select#sort-by {
   border-radius: 37px;
   font-weight: 900;
   font-size: 13px;
-
   color: $color-blue;
-
   color: #0278e6;
   margin-right: 15px;
   transition: $transition;
   margin-bottom: 15px;
+  font-family: "Stem Medium";
+  font-weight: 500;
 
   &:hover {
     background: $color-blue;
@@ -551,7 +551,7 @@ select#sort-by {
 @media only screen and (max-width: 1024px) {
   /// BASIC
   .content__full-width {
-    width: 85%;
+    width: 90%;
     padding-left: 0;
     margin: 0 auto;
   }
@@ -761,6 +761,10 @@ select#sort-by {
   grid-gap: 30px;
 }
 @media only screen and (max-width: 640px) {
+  .info-block__h2 {
+    width: 95%;
+    margin: 0 auto;
+  }
   /// BASIC
   .tags__wrapper,
   .sort-by__wrapper,
@@ -898,6 +902,9 @@ select#sort-by {
   .footer__row--1 {
     border-bottom: none;
   }
+  .footer__col--5x {
+    margin-bottom: 60px;
+  }
   .footer__col--5x,
   .footer__col--6x {
     width: 100%;
@@ -905,7 +912,7 @@ select#sort-by {
   .footer__col--5x .btn--link {
     height: 60px;
     border-radius: 45px;
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 50px;
     margin-bottom: 50px;
   }
@@ -1030,11 +1037,21 @@ a.info-block__btn {
   .footer__col--7x {
     flex-direction: column;
   }
+  .footer__col--5x .btn--link {
+    font-size: 14px;
+    height: 50px;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }
 
 @media only screen and (max-width: 375px) {
   .tags__btn {
     height: 30px;
     padding: 6px 10px;
+  }
+  .footer--full-width {
+    padding: 50px 30px;
   }
 }

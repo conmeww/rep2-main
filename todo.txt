@@ -1,10 +1,10 @@
-TRANSITION SVG 
+
 LOGO
 
 ICON SVG CATEGORY
 
 
-CHANGE HERO IMGS
+
 
 MARGINS SECTIONS
 add scroll color
@@ -21,3 +21,11 @@ z-index иконки главная
 проверить свг типы продуктов
 
 start title
+заменить h2 на h2 main/paddings
+
+типы блока новостей
+footer
+check news img width
+alt
+
+: 1HhEc6netM

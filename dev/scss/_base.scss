@@ -26,8 +26,8 @@ html {
 
 body {
   line-height: 1.6;
-  font-family: "Stem Light";
-  font-weight: 100;
+  font-family: "Stem SemiLight";
+  font-weight: 350;
   font-size: 16px;
   width: 100%;
 }
@@ -35,14 +35,21 @@ body {
 .main {
   max-width: 1344px;
   width: 100%;
+  min-height: 1200px;
+  height: 100%;
 }
 p {
-  font-family: "Stem Light";
-  font-weight: 100;
+  font-family: "Stem SemiLight";
+  font-weight: 350;
+  font-size: 14px;
 }
 .wrapper {
   position: relative;
   width: 100%;
+}
+.sidebar__link-sm {
+  font-family: "Stem SemiLight";
+  font-weight: 350;
 }
 .content {
   display: flex;
@@ -141,11 +148,34 @@ button.btn--call {
   border: none;
   outline: none;
   font-size: 14px;
+  font-family: "Stem Medium";
+  font-weight: 500;
 }
 button:active {
   transform: translateY(2px) scale(0.9);
 }
-button.btn--solid {
+
+.btn--arrow {
+  width: 227px;
+  height: 54px;
+  font-size: 14px;
+  background: #faf8f7;
+  border-radius: 27px;
+  span {
+    margin-right: -19px;
+    margin-left: 28px;
+    pointer-events: all;
+
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+button.btn--solid,
+a.btn--solid {
   font-size: 18px;
   height: 54px;
   background: #0278e6;
@@ -154,10 +184,16 @@ button.btn--solid {
   align-items: center;
   color: #fff;
   border: none;
-  font-family: "Stem Light";
-  font-weight: 900;
+  font-family: "Stem Medium";
+  font-weight: 500;
 }
+a.btn--solid {
+  border-radius: 27px;
 
+  &:hover {
+    color: #fff;
+  }
+}
 .btn--search {
   width: 179px;
   border-radius: 27px;
@@ -173,8 +209,9 @@ button.btn--solid {
   border-radius: 27px;
   height: 54px;
   background: $color-gray;
-  font-family: "Stem Light";
-  font-weight: 900;
+  font-family: "Stem SemiLight";
+  font-weight: 350;
+
   color: $color-black;
   transition: $transition;
   font-size: 18px;
@@ -449,7 +486,7 @@ button {
     font-family: inherit;
     font-size: 18px;
     font-family: "Stem Medium";
-    font-weight: 100;
+    font-weight: 500;
     padding-bottom: 30px;
   }
 }
@@ -552,7 +589,7 @@ button {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.04em;
-    font-family: "Stem Light";
+    font-family: "Stem SemiLight";
     padding-bottom: 0;
     padding-left: 12px;
   }
@@ -560,7 +597,7 @@ button {
     color: #025de5;
     text-decoration: underline;
     font-size: 14px;
-    font-family: "Stem Light";
+    font-family: "Stem SemiLight";
   }
 }
 
@@ -702,7 +739,7 @@ button {
       font-size: 24px;
       color: $color-blue;
       font-family: "Stem Medium";
-      font-weight: 100;
+      font-weight: 500;
       margin-bottom: 35px;
     }
   }

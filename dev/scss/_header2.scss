@@ -1,3 +1,30 @@
+@media only screen and (max-width: 1024px) {
+  .nav-up {
+    transition: $transition;
+    transform: translateY(-150px);
+    position: fixed !important;
+  }
+  .nav-down {
+    transition: $transition;
+    position: fixed !important;
+    transform: translateY(0px);
+  }
+}
+/// show header on scroll HEADER 2
+@media only screen and (max-width: 1366px) {
+  .nav-up--2 {
+    transition: $transition;
+    transform: translateY(-150px);
+    position: fixed !important;
+    //width: 100%;
+  }
+  .nav-down--2 {
+    transition: $transition;
+    position: fixed !important;
+    transform: translateY(0px);
+    //width: 100%;
+  }
+}
 /********************************************* COMMON STYLES FOR HEADER *********************************************/
 .content--margin-top {
   margin-top: 0;
@@ -131,39 +158,14 @@
 }
 .header--fixed {
   position: fixed !important;
+  transform: none!important;
 }
 .header__burger--1,
 .header__burger--2 {
   display: none;
 }
 /// show header on scroll HEADER 1
-@media only screen and (max-width: 1024px) {
-  .nav-up {
-    transition: $transition;
-    transform: translateY(-150px);
-    position: fixed !important;
-  }
-  .nav-down {
-    transition: $transition;
-    position: fixed !important;
-    transform: translateY(0px);
-  }
-}
-/// show header on scroll HEADER 2
-@media only screen and (max-width: 1366px) {
-  .nav-up--2 {
-    transition: $transition;
-    transform: translateY(-150px);
-    position: fixed !important;
-    width: 100%;
-  }
-  .nav-down--2 {
-    transition: $transition;
-    position: fixed !important;
-    transform: translateY(0px);
-    width: 100%;
-  }
-}
+
 
 /********************************************* HEADER (header--1) *********************************************/
 .header--1 {
@@ -237,7 +239,7 @@
 @media only screen and (max-width: 1366px) {
   .header__icons--2 {
     padding-right: 50px;
-    width: 84%;
+    width: 91%;
   }
   .nav-mobile--2 {
     position: fixed;
@@ -348,6 +350,14 @@
     margin-right: auto;
   }
 }
+@media only screen and (max-width: 1200px) {
+  .header__icons--2 {
+
+  width: 84%;
+}
+}
+
+
 @media only screen and (max-width: 1024px) {
   .header__burger {
     right: 42px;
@@ -554,9 +564,9 @@
   }
   .header__burger--1,
   .header__burger--2 {
-    top: 26px;
+    top: 24px;
     position: absolute;
-    right: 32px;
+    right: 37px;
   }
 
   .header__icons--1,

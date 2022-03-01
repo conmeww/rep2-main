@@ -1,5 +1,3 @@
-////////////////////////////////////////////////////////////////////////////////////////////////////
-// slider timeline
 var swiper = new Swiper(".swiper-container-timeline", {
   pagination: {
     el: ".swiper-pagination-top",
@@ -191,7 +189,7 @@ $(function () {
     //$(".tags").toggleClass("main__invisible");
     $(".content--two-cols").toggleClass("main__invisible");
     $(".content__full-width").toggleClass("main__invisible");
-    $(".header__wrapper").toggleClass("header--mobile-fixed");
+    $(".header--2").toggleClass("header--fixed");
   });
 
   $(window).on("load resize", function () {
@@ -426,279 +424,7 @@ $(".noize_range").ionRangeSlider({
   },
 });
 /// accordion on mobile
-function swiperMode() {
-  let swiper = Swiper;
-  let init = false;
 
-  let mobile = window.matchMedia("(min-width: 0px) and (max-width: 640px)");
-  let tablet = window.matchMedia("(min-width: 640px) and (max-width: 1024px)");
-  let desktop = window.matchMedia("(min-width: 1025px)");
-
-  // Enable (for mobile)
-  if (mobile.matches) {
-    if (!init) {
-      init = true;
-      swiper = new Swiper(".news__swiper-container", {
-        // slidesPerView: 3,
-
-        disableOnInteraction: false,
-
-        centeredSlides: true,
-        loop: false,
-        spaceBetween: 10,
-        direction: "horizontal",
-        effect: "coverflow",
-
-        // navigation: {
-        //     nextEl: '.swiper-button-next',
-        //     prevEl: '.swiper-button-prev',
-        // },
-        slidesPerView: "auto",
-        centeredSlides: true,
-
-        coverflowEffect: {
-          rotate: 0,
-          stretch: 0,
-          depth: 0,
-          modifier: 0,
-          slideShadows: false,
-        },
-
-        breakpoints: {
-          767: {
-            slidesPerView: 1,
-            spaceBetween: 0,
-            effect: "coverflow",
-
-            coverflowEffect: {
-              rotate: 0,
-              stretch: 20,
-              depth: 120,
-              modifier: 3,
-              slideShadows: false,
-            },
-          },
-          440: {
-            spaceBetween: 10,
-          },
-        },
-      });
-    }
-  }
-
-  // Disable (for tablet)
-  else if (tablet.matches) {
-    swiper.destroy();
-    init = false;
-  }
-
-  // Disable (for desktop)
-  else if (desktop.matches) {
-    swiper.destroy();
-    init = false;
-  }
-}
-
-let swiperInfoBlockImgs = document.querySelector(".info-block--imgs");
-if (swiperInfoBlockImgs || false) {
-  function swiperMode2() {
-    let swiper = Swiper;
-    let init = false;
-
-    let mobile = window.matchMedia("(min-width: 0px) and (max-width: 640px)");
-    let tablet = window.matchMedia(
-      "(min-width: 640px) and (max-width: 1024px)"
-    );
-    let desktop = window.matchMedia("(min-width: 1025px)");
-
-    // Enable (for mobile)
-    if (mobile.matches) {
-      if (!init) {
-        init = true;
-        swiper = new Swiper(".info-block--imgs", {
-          slidesPerView: 1,
-
-          disableOnInteraction: false,
-
-          centeredSlides: false,
-          loop: false,
-          spaceBetween: 10,
-          direction: "horizontal",
-          //effect: "coverflow",
-
-          pagination: {
-            el: ".swiper-pagination--mobile",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          autoplay: {
-            delay: 1800,
-            disableOnInteraction: false,
-          },
-
-          loop: true,
-          watchSlidesProgress: true,
-          slidesPerView: "auto",
-          centeredSlides: true,
-
-          // coverflowEffect: {
-          //   rotate: 0,
-          //   stretch: 0,
-          //   depth: 0,
-          //   modifier: 0,
-          //   slideShadows: false,
-          // },
-
-          breakpoints: {
-            767: {
-              slidesPerView: 1,
-              spaceBetween: 0,
-              centeredSlides: true,
-              //effect: "coverflow",
-
-              // coverflowEffect: {
-              //   rotate: 0,
-              //   stretch: 20,
-              //   depth: 120,
-              //   modifier: 3,
-              //   slideShadows: false,
-              // },
-            },
-            440: {
-              spaceBetween: 10,
-            },
-          },
-        });
-      }
-    }
-
-    // Disable (for tablet)
-    else if (tablet.matches) {
-      swiper.destroy();
-      init = false;
-    }
-
-    // Disable (for desktop)
-    else if (desktop.matches) {
-      swiper.destroy();
-      init = false;
-    }
-  }
-}
-
-window.addEventListener("load", function () {
-  swiperMode2();
-});
-/* On Resize
- **************************************************************/
-window.addEventListener("resize", function () {
-  swiperMode2();
-});
-window.addEventListener("load", function () {
-  swiperMode2();
-});
-/* On Resize
- **************************************************************/
-window.addEventListener("resize", function () {
-  swiperMode2();
-});
-//////////////////
-
-/* Which media query
- **************************************************************/
-let swiperNewsContainer = document.querySelector(".news__swiper-container");
-if (swiperNewsContainer || false) {
-  function swiperMode() {
-    var swiper = Swiper;
-    var init = false;
-    let mobile = window.matchMedia("(min-width: 0px) and (max-width: 640px)");
-    let tablet = window.matchMedia(
-      "(min-width: 640px) and (max-width: 1024px)"
-    );
-    let desktop = window.matchMedia("(min-width: 1025px)");
-
-    // Enable (for mobile)
-    if (mobile.matches) {
-      if (!init) {
-        init = true;
-        swiper = new Swiper(".news__swiper-container", {
-          // slidesPerView: 3,
-
-          disableOnInteraction: false,
-
-          centeredSlides: true,
-          loop: false,
-          spaceBetween: 10,
-          direction: "horizontal",
-          effect: "coverflow",
-
-          // navigation: {
-          //     nextEl: '.swiper-button-next',
-          //     prevEl: '.swiper-button-prev',
-          // },
-          slidesPerView: "auto",
-          centeredSlides: true,
-
-          coverflowEffect: {
-            rotate: 0,
-            stretch: 0,
-            depth: 0,
-            modifier: 0,
-            slideShadows: false,
-          },
-
-          breakpoints: {
-            767: {
-              slidesPerView: 1,
-              spaceBetween: 0,
-              effect: "coverflow",
-
-              coverflowEffect: {
-                rotate: 0,
-                stretch: 20,
-                depth: 120,
-                modifier: 3,
-                slideShadows: false,
-              },
-            },
-            440: {
-              spaceBetween: 10,
-            },
-          },
-        });
-      }
-    }
-
-    // Disable (for tablet)
-    else if (tablet.matches) {
-      swiper.destroy();
-      init = false;
-    }
-
-    // Disable (for desktop)
-    else if (desktop.matches) {
-      swiper.destroy();
-      init = false;
-    }
-  }
-} else {
-  console.log(1);
-}
-
-/* On Load
- **************************************************************/
-window.addEventListener("load", function () {
-  swiperMode();
-});
-
-/* On Resize
- **************************************************************/
-window.addEventListener("resize", function () {
-  swiperMode();
-});
 ///// OPEN FILTER
 const btnFilterDesktop = document.getElementById("btn-filter-desktop");
 const btnFilterMobile = document.getElementById("btn-filter-mob");
@@ -824,6 +550,7 @@ $("#btn-add-review").click(function (e) {
 // product card slider
 
 /////////
+
 $(document).ready(function () {
   $(".product-cards-slider").slick({
     centerMode: false,
@@ -832,4 +559,222 @@ $(document).ready(function () {
     prevArrow: $(".products-slider__prev"),
     nextArrow: $(".products-slider__next"),
   });
+});
+//////////
+
+(function () {
+  "use strict";
+
+  // breakpoint where swiper will be destroyed
+  // and switches to a dual-column layout
+  const breakpoint = window.matchMedia("(min-width:640px)");
+
+  // keep track of swiper instances to destroy later
+  let mySwiper;
+
+  const breakpointChecker = function () {
+    // if larger viewport and multi-row layout needed
+    if (breakpoint.matches === true) {
+      // clean up old instances and inline styles when available
+      if (mySwiper !== undefined) mySwiper.destroy(true, true);
+
+      // or/and do nothing
+      return;
+
+      // else if a small viewport and single column layout needed
+    } else if (breakpoint.matches === false) {
+      // fire small viewport version of swiper
+      return enableSwiper();
+    }
+  };
+
+  const enableSwiper = function () {
+    mySwiper = new Swiper(".news__swiper-container", {
+      centeredSlides: true,
+      loop: false,
+      spaceBetween: 10,
+      direction: "horizontal",
+      effect: "coverflow",
+
+      // navigation: {
+      //     nextEl: '.swiper-button-next',
+      //     prevEl: '.swiper-button-prev',
+      // },
+      slidesPerView: "auto",
+      centeredSlides: true,
+
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 0,
+        modifier: 0,
+        slideShadows: false,
+      },
+    });
+  };
+
+  // keep an eye on viewport size changes
+  breakpoint.addListener(breakpointChecker);
+
+  // kickstart
+  breakpointChecker();
+})(); /* IIFE end */
+
+(function () {
+  "use strict";
+
+  // breakpoint where swiper will be destroyed
+  // and switches to a dual-column layout
+  const breakpoint = window.matchMedia("(min-width:640px)");
+
+  // keep track of swiper instances to destroy later
+  let mySwiper;
+
+  const breakpointChecker = function () {
+    // if larger viewport and multi-row layout needed
+    if (breakpoint.matches === true) {
+      // clean up old instances and inline styles when available
+      if (mySwiper !== undefined) mySwiper.destroy(true, true);
+
+      // or/and do nothing
+      return;
+
+      // else if a small viewport and single column layout needed
+    } else if (breakpoint.matches === false) {
+      // fire small viewport version of swiper
+      return enableSwiper();
+    }
+  };
+
+  const enableSwiper = function () {
+    mySwiper = new Swiper(".info-block--imgs", {
+      slidesPerView: 1,
+
+      disableOnInteraction: false,
+
+      centeredSlides: false,
+      loop: false,
+      spaceBetween: 10,
+      direction: "horizontal",
+      //effect: "coverflow",
+
+      pagination: {
+        el: ".swiper-pagination--mobile",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 1800,
+        disableOnInteraction: false,
+      },
+
+      loop: true,
+      watchSlidesProgress: true,
+      slidesPerView: "auto",
+      centeredSlides: true,
+
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 0,
+        modifier: 0,
+        slideShadows: false,
+      },
+    });
+  };
+
+  // keep an eye on viewport size changes
+  breakpoint.addListener(breakpointChecker);
+
+  // kickstart
+  breakpointChecker();
+})(); /* IIFE end */
+
+$(document).ready(function () {
+  $(".product-cards-slider").slick({
+    centerMode: false,
+
+    slidesToShow: 2,
+    prevArrow: $(".products-slider__prev"),
+    nextArrow: $(".products-slider__next"),
+  });
+});
+///////
+(function () {
+  "use strict";
+
+  // breakpoint where swiper will be destroyed
+  // and switches to a dual-column layout
+  const breakpoint = window.matchMedia("(min-width:640px)");
+
+  // keep track of swiper instances to destroy later
+  let mySwiper;
+
+  const breakpointChecker = function () {
+    // if larger viewport and multi-row layout needed
+    if (breakpoint.matches === true) {
+      // clean up old instances and inline styles when available
+      if (mySwiper !== undefined) mySwiper.destroy(true, true);
+
+      // or/and do nothing
+      return;
+
+      // else if a small viewport and single column layout needed
+    } else if (breakpoint.matches === false) {
+      // fire small viewport version of swiper
+      return enableSwiper();
+    }
+  };
+
+  const enableSwiper = function () {
+    mySwiper = new Swiper(".articles__swiper-container", {
+      centeredSlides: true,
+      loop: false,
+      spaceBetween: 10,
+      direction: "horizontal",
+      effect: "coverflow",
+
+      // navigation: {
+      //     nextEl: '.swiper-button-next',
+      //     prevEl: '.swiper-button-prev',
+      // },
+      slidesPerView: "auto",
+      centeredSlides: true,
+
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 0,
+        modifier: 0,
+        slideShadows: false,
+      },
+    });
+  };
+
+  // keep an eye on viewport size changes
+  breakpoint.addListener(breakpointChecker);
+
+  // kickstart
+  breakpointChecker();
+})(); /* IIFE end */
+/////////
+var swiper = new Swiper(".work__slider", {
+  pagination: {
+    el: ".swiper-pagination-top",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+    delay: 1800,
+    disableOnInteraction: false,
+  },
+
+  loop: true,
+  watchSlidesProgress: true,
 });

@@ -372,11 +372,11 @@
           <div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingOne">
               <button
-                class="accordion-button nav-mobile__link"
+                class="accordion-button collapsed nav-mobile__link"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#panelsStayOpen-collapseOne"
-                aria-expanded="true"
+                aria-expanded="false"
                 aria-controls="panelsStayOpen-collapseOne"
               >
                 кондиционеры
@@ -384,7 +384,7 @@
             </h2>
             <div
               id="panelsStayOpen-collapseOne"
-              class="accordion-collapse collapse show"
+              class="accordion-collapse collapse"
               aria-labelledby="panelsStayOpen-headingOne"
             >
               <div class="accordion-body">
@@ -422,13 +422,13 @@
             </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
               <button
-                class="accordion-button nav-mobile__link"
+                class="accordion-button collapsed nav-mobile__link"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#panelsStayOpen-collapseTwo"
-                aria-expanded="true"
+                aria-expanded="false"
                 aria-controls="panelsStayOpen-collapseTwo"
               >
                 Системы вентиляции
@@ -436,7 +436,7 @@
             </h2>
             <div
               id="panelsStayOpen-collapseTwo"
-              class="accordion-collapse collapse show"
+              class="accordion-collapse collapse"
               aria-labelledby="panelsStayOpen-headingTwo"
             >
               <div class="accordion-body">
@@ -1034,7 +1034,7 @@
           </div>
           <!------------------------------SEARCH DROP DOWN(HIDDEN)------------------------------>
 
-          <h1 class="main">Доставка и оплата</h1>
+          <h1 class="h1--main">Доставка и оплата</h1>
           <div class="shipment__wrapper">
             <div class="shipment">
               <div class="shipment-col shipment-col--1 delivery">
@@ -1222,11 +1222,17 @@
                   ограничений.
                 </p>
                 <p class="payment__subtitle">Оплата картой</p>
-                <div class="payment__cards"></div>
-                <p class="payment__subtitle"></p>
+                <img src="img/credit_cards.png" alt="" class="payment__cards" />
+                <p class="payment__subtitle">Оплата наличными</p>
+                <img src="img/rub.png" alt="" class="payment_money" />
                 <div class="payment__cols">
                   <div class="payment__col">
                     <p class="payment__subtitle">Для юридических лиц</p>
+                    <img
+                      src="img/document_img.png"
+                      alt=""
+                      class="payment__document"
+                    />
                   </div>
                   <div class="payment__col">
                     <p class="payment__subtitle">Реквезиты компании</p>
@@ -1260,13 +1266,15 @@
               src="img/half-man.png"
               alt="Сотрудник"
             />
-            <div class="promo">
-              <img class="promo__img" src="img/man.png" alt="Сотрудник" />
+            <div class="promo promo--sm">
+              <img
+                class="promo__img promo__img--sm"
+                src="img/man.png"
+                alt="Сотрудник"
+              />
               <div class="promo__info">
-                <p class="p-lg">Заполните заявку сейчас и получите скидку</p>
-                <p class="p-lg p-colored">
-                  <span class="span-zoomed">—10%</span> на монтажные работы
-                </p>
+                <p class="p-lg">Если у Вас остались вопросы,</p>
+                <p class="p-lg p-colored">получите бесплатную консультацию</p>
                 <form class="contact-form promo__contact-form" action="">
                   <input
                     class="input--basic modal__input"

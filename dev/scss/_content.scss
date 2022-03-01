@@ -10,8 +10,8 @@
   border-radius: 27px;
   height: 54px;
   background: $color-gray;
-  font-family: "Stem Light";
-  font-weight: 900;
+  font-family: "Stem SemiLight";
+  font-weight: 350;
   color: $color-black;
   transition: $transition;
   color: $color-black;
@@ -26,7 +26,7 @@ span.sidebar___tooltip-span--1 {
 }
 span.sidebar___tooltip-span--2 {
   //top: 46%;
-  top:44.5%;
+  top: 44.5%;
 }
 span.sidebar___tooltip-span--3 {
   top: 37%;
@@ -141,7 +141,8 @@ svg.btn--news--show-all__svg path {
 
 .swiper-timeline,
 .swiper {
-  h2.main {
+  h2.main,
+  .h2--main {
     padding-bottom: 40px;
   }
 }
@@ -234,7 +235,6 @@ a.product-type {
   background: #faf8f7;
   align-items: center;
   justify-content: center;
-  
 
   h3 {
     text-transform: uppercase;
@@ -269,7 +269,7 @@ a.product-type {
 
 .product__card h4 {
   font-style: normal;
-  font-weight: 100;
+  font-weight: 500;
   font-size: 18px;
   line-height: 22px;
   line-height: 22px;
@@ -366,7 +366,7 @@ h4.price-current {
 
 p.price__current {
   font-style: normal;
-  font-weight: 100;
+  font-weight: 500;
   font-size: 20px;
   line-height: 22px;
   line-height: 22px;
@@ -377,14 +377,8 @@ p.price__current {
 
 p.discount {
   text-decoration: line-through;
-  font-family: "Stem Light";
-  font-weight: 700;
-}
-
-p.status {
-  position: relative;
-  font-family: "Stem Light";
-  font-weight: 700;
+  font-family: "Stem SemiLight";
+  font-weight: 350;
 }
 
 p.available::before {
@@ -395,7 +389,7 @@ p.available::before {
 }
 
 .product__cart {
-  font-family: "Stem Light";
+  font-family: "Stem SemiLight";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -452,7 +446,7 @@ p.available::before {
 
   h4 {
     font-style: normal;
-    font-weight: 100;
+    font-weight: 500;
     font-size: 18px;
     line-height: 22px;
     line-height: 22px;
@@ -489,25 +483,18 @@ p.available::before {
 
 p.price__current {
   font-style: normal;
-  font-weight: 100;
+
   font-size: 20px;
   line-height: 22px;
   line-height: 22px;
   color: $color-blue;
   text-align: center;
-  font-family: "Stem Medium";
-}
-
-p.discount {
-  text-decoration: line-through;
-  font-family: "Stem Light";
-  font-weight: 700;
 }
 
 p.status {
   position: relative;
-  font-family: "Stem Light";
-  font-weight: 700;
+  font-family: "Stem SemiLight";
+  font-weight: 350;
 }
 
 p.available::before {
@@ -525,7 +512,6 @@ p.request::before {
 }
 
 .product__cart {
-  font-family: "Stem Light";
   display: flex;
   margin-left: 0;
   margin-right: auto;
@@ -535,7 +521,7 @@ p.request::before {
   padding: 9px 29px;
   background: #ffffff;
   border-radius: 20px;
-  font-weight: 100;
+
   border: none;
   font-size: 18px;
   align-items: center;
@@ -602,7 +588,8 @@ input.input--basic {
   display: inline;
   height: 54px;
   font-size: 18px;
-  font-family: "Stem Light";
+  font-family: "Stem SemiLight";
+  font-weight: 350;
   padding-left: 30px;
 }
 
@@ -787,7 +774,8 @@ img.screen {
   margin-bottom: 90px;
   margin-top: 66px;
 
-  h2.main {
+  h2.main,
+  .h2--main {
     padding-bottom: 35px;
   }
 }
@@ -820,7 +808,8 @@ img.screen {
 .steps__wrapper {
   margin-bottom: 100px;
 
-  h2.main {
+  h2.main,
+  .h2--main {
     padding-bottom: 40px;
   }
 }
@@ -866,9 +855,6 @@ img.screen {
 }
 
 /*************** news ***************/
-.news {
-  margin-bottom: 140px;
-}
 
 .news__cards {
   display: flex;
@@ -914,7 +900,7 @@ img.screen {
 
 .news__card img {
   padding-bottom: 20px;
-  max-width: 420px;
+  //max-width: 420px;
   width: 100%;
   height: 100%;
 }
@@ -953,11 +939,13 @@ img.screen {
   letter-spacing: 0.04em;
   padding-bottom: 16px;
   color: $color-black;
+  font-family: "Stem Medium";
 }
 
 /*************** promo contact form ***************/
 .promo__wrapper {
   margin-bottom: 100px;
+  margin-top: 140px;
 }
 .promo__img--cropped {
   display: none;
@@ -1003,7 +991,8 @@ img.screen {
 
 /*************** contacts ***************/
 .contacts__wrapper {
-  h2.main {
+  h2.main,
+  .h2--main {
     padding-bottom: 40px;
   }
 }
@@ -1054,7 +1043,7 @@ img.screen {
 
 .contacts__details p {
   font-family: "Stem Medium";
-  font-weight: 100;
+  font-weight: 500;
   font-size: 28px;
   line-height: 35px;
   letter-spacing: 0.04em;

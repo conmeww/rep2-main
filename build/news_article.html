@@ -36,7 +36,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <title> </title>
+    <title>Новость/ статья</title>
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
 
@@ -372,11 +372,11 @@
           <div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingOne">
               <button
-                class="accordion-button nav-mobile__link"
+                class="accordion-button collapsed nav-mobile__link"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#panelsStayOpen-collapseOne"
-                aria-expanded="true"
+                aria-expanded="false"
                 aria-controls="panelsStayOpen-collapseOne"
               >
                 кондиционеры
@@ -384,7 +384,7 @@
             </h2>
             <div
               id="panelsStayOpen-collapseOne"
-              class="accordion-collapse collapse show"
+              class="accordion-collapse collapse"
               aria-labelledby="panelsStayOpen-headingOne"
             >
               <div class="accordion-body">
@@ -422,13 +422,13 @@
             </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
               <button
-                class="accordion-button nav-mobile__link"
+                class="accordion-button collapsed nav-mobile__link"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#panelsStayOpen-collapseTwo"
-                aria-expanded="true"
+                aria-expanded="false"
                 aria-controls="panelsStayOpen-collapseTwo"
               >
                 Системы вентиляции
@@ -436,7 +436,7 @@
             </h2>
             <div
               id="panelsStayOpen-collapseTwo"
-              class="accordion-collapse collapse show"
+              class="accordion-collapse collapse"
               aria-labelledby="panelsStayOpen-headingTwo"
             >
               <div class="accordion-body">
@@ -1026,116 +1026,61 @@
             <div class="breadcrumbs breadcumbs--header">
               <a href="#" class="breadcrumbs__link">Главная</a>
               <span class="breadcrumbs__separator"> — </span>
+              <a href="#" class="breadcrumbs__link">О компании</a>
+              <span class="breadcrumbs__separator"> — </span>
               <a href="#" class="breadcrumbs__link breadcrumbs__link--active"
-                >Клиентам</a
+                >Новости и статьи</a
               >
             </div>
           </div>
-          <!------------------------------SEARCH DROP DOWN(HIDDEN)------------------------------>
 
-          <h1 class="main">Доставка и оплата</h1>
-          <div class="qa__wrapper">
-            <div class="qa">
-              <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button
-                      class="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                    >
-                      Accordion Item #1
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseOne"
-                    class="accordion-collapse collapse show"
-                    aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong>
-                      It is shown by default, until the collapse plugin adds the
-                      appropriate classes that we use to style each element.
-                      These classes control the overall appearance, as well as
-                      the showing and hiding via CSS transitions. You can modify
-                      any of this with custom CSS or overriding our default
-                      variables. It's also worth noting that just about any HTML
-                      can go within the <code>.accordion-body</code>, though the
-                      transition does limit overflow.
-                    </div>
-                  </div>
+          <!------------------------------NEWS - ARTICLE ------------------------------>
+          <h1 class="h1--main">Вентиляция для промышленных помещений</h1>
+          <div class="article__wrapper">
+            <div class="article">
+              <img src="img/news_img3.png" alt="" class="article__img" />
+              <div class="article__text-box">
+                <div class="article__col">
+                  <p class="article__txt">
+                    С учётом сложившейся международной обстановки, повышение
+                    уровня гражданского сознания предопределяет высокую
+                    востребованность дальнейших направлений развития.
+                  </p>
+                  <p class="article__txt">
+                    Прежде всего, постоянный количественный рост и сфера нашей
+                    активности создаёт предпосылки для позиций, занимаемых
+                    участниками в отношении поставленных задач. Учитывая
+                    ключевые сценарии поведения, семантический разбор внешних
+                    противодействий требует от нас анализа первоочередных
+                    требований. С учётом сложившейся международной обстановки,
+                    повышение уровня гражданского сознания предопределяет
+                    высокую востребованность дальнейших направлений развития.
+                  </p>
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      Accordion Item #2
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseTwo"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      <strong>This is the second item's accordion body.</strong>
-                      It is hidden by default, until the collapse plugin adds
-                      the appropriate classes that we use to style each element.
-                      These classes control the overall appearance, as well as
-                      the showing and hiding via CSS transitions. You can modify
-                      any of this with custom CSS or overriding our default
-                      variables. It's also worth noting that just about any HTML
-                      can go within the <code>.accordion-body</code>, though the
-                      transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
-                    >
-                      Accordion Item #3
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseThree"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingThree"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong>
-                      It is hidden by default, until the collapse plugin adds
-                      the appropriate classes that we use to style each element.
-                      These classes control the overall appearance, as well as
-                      the showing and hiding via CSS transitions. You can modify
-                      any of this with custom CSS or overriding our default
-                      variables. It's also worth noting that just about any HTML
-                      can go within the <code>.accordion-body</code>, though the
-                      transition does limit overflow.
-                    </div>
-                  </div>
+                <div class="article__col">
+                  <p class="article__txt">
+                    Прежде всего, постоянный количественный рост и сфера нашей
+                    активности создаёт предпосылки для позиций, занимаемых
+                    участниками в отношении поставленных задач. Учитывая
+                    ключевые сценарии поведения, семантический разбор внешних
+                    противодействий требует от нас анализа первоочередных
+                    требований.
+                  </p>
+                  <p class="article__txt">
+                    С учётом сложившейся международной обстановки, повышение
+                    уровня гражданского сознания предопределяет высокую
+                    востребованность дальнейших направлений развития.
+                  </p>
+                  <p class="article__txt">
+                    С учётом сложившейся международной обстановки, повышение
+                    уровня гражданского сознания предопределяет высокую
+                    востребованность дальнейших направлений развития.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
+
           <!------------------------------FOOTER------------------------------>
           <div class="footer__wrapper">
             <footer class="footer">

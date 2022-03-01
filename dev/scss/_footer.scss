@@ -5,7 +5,7 @@
 
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 46px;
@@ -146,10 +146,12 @@ img.yandex-service__ic {
   padding-bottom: 6px;
   margin-bottom: 15px;
   font-size: 20px;
+  font-weight: 500;
+  font-family: 'Stem Medium';
 }
 .footer__title--sm {
-  font-weight: 900;
-  //font-family: 'Stem Regular';
+  font-weight: 500;
+  font-family: 'Stem Medium';
 }
 .footer__nav {
   display: flex;

@@ -1,6 +1,9 @@
 /********************************************* 1024px *********************************************/
 @media only screen and (max-width: 1024px) {
   /*************** base ***************/
+  .main {
+    min-height: 100% !important;
+  }
   .fixed {
     padding-top: 150px;
   }
@@ -10,13 +13,13 @@
     position: relative;
   }
   .advantages__wrapper,
-  .our-works,
+  .our-works__slider,
   .contacts__wrapper {
-    h2.main {
-      padding-left: 78px;
+    .h2--main {
+      padding-left: 43px;
       line-height: normal;
       &::before {
-        left: 35px;
+        left: 0px;
         top: 10px;
       }
     }
@@ -450,6 +453,16 @@
 }
 
 @media only screen and (max-width: 640px) {
+  .breadcrumbs__link {
+    font-size: 12px;
+  }
+  p {
+    font-size: 13px;
+  }
+  .h2--main {
+    width: 95%;
+    margin: 0 auto;
+  }
   /*************** base ***************/
   .main {
     width: 100%;
@@ -472,6 +485,7 @@
   }
   .promo__wrapper {
     margin-bottom: 70px;
+    margin-top: 230px;
   }
   // p {
   //   font-family: "Stem Medium";
@@ -552,9 +566,7 @@
   .btn--news {
     display: none;
   }
-  .news {
-    margin-bottom: 200px;
-  }
+
   .news__cards {
     flex-wrap: nowrap;
     align-items: flex-start;
@@ -813,7 +825,8 @@
   }
 }
 @media only screen and (max-width: 500px) {
-  .header__phone--1 {
+  .header__phone--1,
+  .nav__phone {
     width: auto;
     margin-right: auto;
     margin-right: 60px;
@@ -879,7 +892,8 @@
     font-size: 14px;
     line-height: normal;
   }
-  .header__phone--1 {
+  .header__phone--1,
+  .header__phone {
     padding-left: 0;
   }
   .accordion__ul li {
@@ -888,9 +902,13 @@
   a.detailed-search {
     font-size: 14px;
   }
-  h2.main {
+
+  .h2--main {
     font-size: 18px;
     line-height: normal;
+    &::before {
+      top: 10px;
+    }
   }
   .modal__content--contact-me {
     padding: 50px 20px;
@@ -999,7 +1017,8 @@
   .header__icons--1 {
     width: 90%;
   }
-  .header__burger--1 {
+  .header__burger--1,
+  .header__burger--2 {
     right: 20px;
   }
   // .product-cards__wrapper,
@@ -1012,7 +1031,7 @@
   //   padding-right: 15px;
   // }
   .nav__phone {
-    padding-left: 4px;
+    padding-left: 0px;
   }
 
   .phone-carousel {
